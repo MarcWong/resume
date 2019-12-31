@@ -1,76 +1,104 @@
-% !TEX program = xelatex
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
 
 \documentclass{resume}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
-
-\name{wang yao}
+\name{\href{https://mrright.wang/}{王尧}}
 
 \basicInfo{
   \email{yaowang95@pku.edu.cn} \textperiodcentered\ 
   \phone{(+86) 134-010-76331} \textperiodcentered\ 
-  \faGithub \textperiodcentered\ \href{https://github.com/MarcWong/}{MarcWong}  
- }
-
-\section{\faGraduationCap\ Education Experience}
-\datedsubsection{\textbf{Peking University}, Beijing, China}{\textit{2017 -- Present}}
-\textit{M.D.} in Computer Science (CS), expected in May 2020
-
-\datedsubsection{\textbf{Peking University}, Beijing, China}{\textit{2013 -- 2017}}
-\textit{B.S.} in Center for Information Science(CIS)
-
-
-\section{\faHeartO\ Honors}
-
-\datedsubsection{\textbf{Merit Student}, Peking University}{\textit{2014 - 2015, 2015 - 2016, 2017 - 2018}}
+  \faGithub
+  \href{https://github.com/MarcWong/}{MarcWong}}
+ 
+\section{\faGraduationCap\ 教育背景}
+\datedsubsection{\textbf{北京大学}}{2017 -- 至今}
+\textit{硕士}\ 计算机软件与理论, 预计 2020 年 6 月毕业
+% \begin{itemize}[parsep=0.5ex]
+%     \item 核心专业课程：深度学习技术与应用、现代图论、数字图像处理
+% \end{itemize}
+\datedsubsection{\textbf{北京大学}}{2013 -- 2017}
+\textit{学士}\ 智能科学与技术，总GPA 3.34，排名8/35
 \begin{itemize}[parsep=0.5ex]
-	\item Schlumberger scholarship
+	\item 核心课程：模式识别导论、数字图像处理、算法设计与分析、计算机系统导论、数据结构与算法、集合论与图论
 \end{itemize}
 
-\section{\faBookmark\ Publications}
+\section{\faHeartO\ 获奖情况}
+
+\datedsubsection{\textbf{三好学生}, 北京大学}{2014 - 2015, 2015 - 2016, 2017 - 2018}
 \begin{itemize}[parsep=0.5ex]
-	\item Hu T, \textbf{Wang Y}, Chen Y, et al. Sobel Heuristic Kernel for Aerial Semantic Segmentation[C]//2018 25th IEEE International Conference on Image Processing (ICIP). IEEE, 2018: 3074-3078.
-	\item Chen Y, \textbf{Wang Y}, Lu P, et al. Large-scale structure from motion with semantic constraints of aerial images[C]//Chinese Conference on Pattern Recognition and Computer Vision (PRCV). Springer, Cham, 2018: 347-359.
-	\item \textbf{Wang Y}, Shattuck D, Saver J, et al. Abstract TP55: Spatio-temporal Flow Tractography (SFT) for Evaluation of Collateral Patterns in Acute Stroke[J]. 2017.
+	\item 获2017 - 2018学年斯伦贝谢奖学金
 \end{itemize}
 
-
-\section{\faFlask\ Research Experience}
-
-\datedsubsection{\textbf{Peking University}, Beijing, China}{\textit{Sept. 2016 -- present}}
-\role{Student Researcher}{Manager : Yisong Chen}
-
-\begin{itemize}
-	\item Implemented Non Maximum Suppression(NMS) and Snake algorithm in matlab, designed post process framework of Edge Detection network.
-	\item Extensively engaged in research of Semantic Segmentation and Edge Detection. Designed a module call Sobel Heuristic Kernel(SHK), in order to enhance the performance nearby semantic contour areas.
-\end{itemize}
-
-\datedsubsection{\textbf{University of California, Los Angeles} California, America}{\textit{Jun. 2016 - Sept. 2016}}
-\role{Summer Intern}{Manager: Fabien Scalzo}
-
-\begin{itemize}
-  \item Developed a flow tractography visualization method for MR images
-  \item Familiar with MATLAB image processing toolbox, especially image morphing and filtering.
-\end{itemize}
-
-\section{\faUsers\ Enterprise Experience}
-\datedsubsection{\textbf{Offpay Technology Co.,Ltd.}, Shenzhen, China}{\textit{July. 2018 -- present}}
-\role{CTO \& Frontend Engineer}
-
-\begin{itemize}
-	\item Engaged in MVVM software developing pattern, practiced Vue.js in Wechat Miniprogram (mpvue).
-	\item Made schedules and milestones for the 6-member team. Executed Scrum and Kanban agile development processes.
-
-\end{itemize}
-
-\section{\faCogs\ Skills}
+\datedsubsection{\textbf{优秀基层团干部}, 共青团北京市委员会}{2016}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: JS(vue.js), MATLAB, C++, Python(tensorflow), git, Wechat Mini program
-    \item Languages: Mandarin (native), English (fluent), German (B1)
+	\item 首都大学、中职院校先锋杯优秀基层团干部
 \end{itemize}
+
+\section{\faBookmark\ 发表论文}
+\begin{itemize}
+    \item \textbf{1$^{st}$ co$-$Author} Large-scale structure from motion with semantic constraints of aerial images[C]//Chinese Conference on Pattern Recognition and Computer Vision (PRCV). Springer, Cham, 2018: 347-359.
+	\item \textbf{2$^{nd}$ Author} Sobel Heuristic Kernel for Aerial Semantic Segmentation[C]//2018 25$^{th}$ IEEE International Conference on Image Processing (ICIP). IEEE, 2018: 3074-3078.
+	\item \textbf{1$^{st}$ Author} Abstract TP55: Spatio-temporal Flow Tractography (SFT) for Evaluation of Collateral Patterns in Acute Stroke[J]. 2017.
+	\item \textbf{4$^{th}$ Author} Tensor Voting Extraction of Vessel Centerlines from Cerebral Angiograms. In International Symposium on Visual Computing 2016 Dec 12 (pp. 35-44). Springer, Cham. 
+\end{itemize}
+
+
+\section{\faFlask\ 科研经历}
+
+\datedsubsection{\textbf{北京大学}}{2016年9月 -- 至今}
+\role{科研实习生}{主管: 陈毅松$ $副教授}
+\begin{itemize}
+    \item 理解三维立体视觉Structure from Motion和Multi-view Stereo的流程，掌握openMVS源码的深度图生成过程
+    \item 理解二维语义分割任务的工作流，能够根据论文的网络结构图复现代码，掌握tensorflow和pytorch的使用
+    \item 探索三维重建与语义分割任务的结合方式，实现三维点云K-近邻的语义稠密点云概率融合流程，并利用二维重投影语义图计算误差
+	\item 主导标注无人机语义分割数据集UDD，利用图片二维语义对特征点匹配进行过滤，从而提升稀疏重建精度；相关工作投稿于PRCV 2018
+\end{itemize}
+
+\datedsubsection{\textbf{加州大学洛杉矶分校},  加利福尼亚, 美国}{2016年6月 - 9月}
+\role{科研实习生}{主管: Fabien Scalzo$ $副教授}
+\begin{itemize}[parsep=0.5ex]
+  \item 实现脑部核磁共振影像的数据处理及可视化，体素构建及血流量计算
+  \item 熟练掌握MATLAB的图像处理函数（滤波器、形态学操作等）
+\end{itemize}
+
+
+%%%%%%%%% 社会经历  %%%%%%%%%%%
+% \section{\faUsers\ 社会经历}
+
+% \datedsubsection{\textbf{北京大学信息科学技术学院学生会},  }{2015年9月 - 2016年9月}
+% \role{学生会主席}{}
+% \begin{itemize}[parsep=0.5ex]
+%   \item 创办北京大学黑客马拉松(HackPKU)，吸引来自清华、NYU、哈工大等8所高校近200人参赛，获学院领导肯定，现已举办三届，成为信科学院的品牌活动
+%   \item 赞助企业有商汤、IBM、微软、绿盟、青云、友盟+、搜狐、计蒜客等近10家
+% \end{itemize}
+
+% \datedsubsection{\textbf{免单君科技有限公司}, 深圳}{2018年7月 -- 2019年10月}
+% \role{研发经理 \& 前端工程师}
+
+% \begin{itemize}[parsep=0.5ex]
+% 	\item 负责产品与技术团队的对接工作，管理5个人的前后端开发团队，掌握墨刀、看板等效率工具的使用
+%     \item 熟练使用Vue.js(uniapp)，“免单君商城”、“免单君商户”两个微信小程序均已平稳上线运营半年
+% \end{itemize}
+
+\section{\faCogs\ 技能}
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: Python, MATLAB, JavaScript, C++, git
+  \item 语言: 中文, 英语 (CET-6), 德语 (B1)
+  
+\end{itemize}
+
+% \footnotetext[1]{https://github.com/MarcWong/semantic-point-cloud}
+% \footnotetext[2]{http://mrright.wang/UDD}
+% % \footnotetext[3]{https://github.com/MarcWong/SemanticContour}
+% \footnotetext[3]{https://github.com/MarcWong/PTI}
 
 %% Reference
 %\newpage

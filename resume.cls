@@ -33,19 +33,19 @@
 
 \RequirePackage[
 	a4paper,
-	left=0.8in,
-	right=0.8in,
-	top=0.70in,
-	bottom=0.55in,
+	left=0.25in,
+	right=0.25in,
+	top=0.40in,
+	bottom=0.25in,
 	nohead
 ]{geometry}
 
 \RequirePackage{titlesec}
 \RequirePackage{enumitem}
 \setlist{noitemsep} % removes spacing from items but leaves space around the whole list
-%\setlist{nosep} % removes all vertical spacing within and around the list
-\setlist[itemize]{topsep=0.25em, leftmargin=1.5pc}
-\setlist[enumerate]{topsep=0.25em, leftmargin=1.5pc}
+\setlist{nosep} % removes all vertical spacing within and around the list
+\setlist[itemize]{topsep=0em, leftmargin=1.5pc}
+\setlist[enumerate]{topsep=0em, leftmargin=1.5pc}
 \RequirePackage[super]{nth}
 
 \titleformat{\section}         % Customise the \section command 
